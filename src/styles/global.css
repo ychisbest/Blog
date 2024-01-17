@@ -85,8 +85,7 @@ a:hover {
 }
 p {
 	margin-bottom: 1em;
-	font-size:medium;
-	color: #555;
+	@apply text-sm
 }
 .prose p {
 	margin-bottom: 2em;
