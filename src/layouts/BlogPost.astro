@@ -51,18 +51,19 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				</div>
 				<div class="prose">
 					<div class="text-xl">
-						<div class="text-base flex flex-row">
+						<div class="text-base flex flex-row items-end">
 							<FormattedDate date={pubDate} />
+
+							<div class=" ml-10 text-base font-bold text-gray-600">{title}</div>
+
 							{
 								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
+									<div class=" ml-auto last-updated-on text-sm text-gray-300">
+										最后更新于 <FormattedDate date={updatedDate} />
 									</div>
 								)
 							}
-							<h1 class=" ml-10 text-base font-bold text-gray-600">{title}</h1>
 						</div>
-
 						<hr class="my-3"/>
 					</div>
 					<slot/>
