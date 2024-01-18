@@ -44,12 +44,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 	<body>
 		<Header />
+
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-				</div>
 				<div class="prose">
+
 					<div class="text-xl">
 						<div class="text-base flex flex-row items-end">
 							<FormattedDate date={pubDate} />
@@ -67,6 +66,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 						<hr class="my-3"/>
 					</div>
 					<slot/>
+					<button class="hover:underline text-sm text-gray-500 mb-3" onclick="window.history.back()">返回</button>
 				</div>
 			</article>
 		</main>
