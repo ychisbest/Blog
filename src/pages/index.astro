@@ -3,6 +3,12 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
 ---
 
 <!doctype html>
@@ -13,7 +19,23 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<p>本网站正在建设中</p>
+			<ul>
+				{
+					posts.map((post) => (
+						<li>
+							<a href={`/blog/${post.slug}/`}>
+
+								<div class="flex flex-row text-base text-gray-500 hover:text-gray-700 border-b-gray-400 hover:border-b-2 ">
+									<FormattedDate date={post.data.pubDate} />
+									<div class="ml-10">{post.data.title}</h4>
+								</div>
+
+				
+							</a>
+						</li>
+					))
+				}
+			</ul>
 
 		</main>
 		<Footer />

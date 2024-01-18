@@ -85,7 +85,7 @@ a:hover {
 }
 p {
 	margin-bottom: 1em;
-	@apply text-sm
+	@apply text-sm text-gray-600
 }
 .prose p {
 	margin-bottom: 2em;
