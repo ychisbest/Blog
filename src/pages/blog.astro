@@ -27,7 +27,7 @@ const sortedPosts = posts
         sortedPosts.map((post) => {
           const formattedDate = new Date(
             post.frontmatter.date
-          ).toLocaleDateString("en-us", {
+          ).toLocaleDateString("zh-cn", {
             year: "numeric",
             month: "short",
             day: "numeric",
@@ -65,7 +65,7 @@ const sortedPosts = posts
                   </a>
                 )}
               </div>
-              <div class="text-text-muted text-sm italic pt-1">
+              <div class="mb-5 text-text-muted text-sm italic pt-1">
                 <time datetime={post.frontmatter.date.toISOString()}>
                   {formattedDate}
                 </time>
