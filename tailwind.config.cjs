@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Space Grotesk", "sans-serif"],
-        heading: ["Space Grotesk", "sans-serif"],
+        body: ["LXGW WenKai GB Screen", "sans-serif"],
+        heading: ["LXGW WenKai GB Screen", "sans-serif"],
       },
       colors: {
         transparent: "transparent",

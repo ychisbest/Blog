@@ -9,8 +9,8 @@
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
 
-import GoogleFont from "./GoogleFont.astro";
-import FontAwesome from "./FontAwesome.astro";
+// import GoogleFont from "./GoogleFont.astro";
+// import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
@@ -24,11 +24,12 @@ import Footer from "../components/Footer.astro";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="generator" content="Blogster" />
+    <link rel="stylesheet" href="/fonts/font.css">
     <Favicon />
     <slot name="meta" />
-    <GoogleFont />
+    <!-- <GoogleFont /> -->
     <ThemeScript />
-    <FontAwesome />
+    <!-- <FontAwesome /> -->
   </head>
 
   <body
