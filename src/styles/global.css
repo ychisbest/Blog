@@ -4,6 +4,10 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+ main{
+	@apply w-full;
+ }
+
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -29,12 +33,7 @@ body {
 	font-size: 20px;
 	line-height: 1.7;
 }
-main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 2em 1em;
-}
+
 h1,
 h2,
 h3,
@@ -115,13 +114,9 @@ hr {
 	border-top: 1px solid rgb(var(--gray-light));
 	@apply my-3;
 }
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
+
+main{
+	@apply w-fit mx-auto px-4;
 }
 
 .sr-only {
