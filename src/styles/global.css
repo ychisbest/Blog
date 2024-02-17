@@ -82,7 +82,7 @@
     }
 
     :root {
-        font-size: 0.8rem;
+        /* font-size: 0.8rem; */
         font-display: swap;
         font-family: theme('fontFamily.body');
         background-color: theme('colors.bg.body');

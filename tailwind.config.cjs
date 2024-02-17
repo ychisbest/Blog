@@ -5,8 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["LXGW WenKai GB Screen", "sans-serif"],
-        heading: ["LXGW WenKai GB Screen", "sans-serif"],
+        // body: ["LXGW WenKai GB Screen", "sans-serif"],
+        // heading: ["LXGW WenKai GB Screen", "sans-serif"],
+        body: [ "Cascadia Code"],
+        heading: ["Cascadia Code"],
       },
       colors: {
         transparent: "transparent",
