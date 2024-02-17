@@ -7,8 +7,8 @@ module.exports = {
       fontFamily: {
         // body: ["LXGW WenKai GB Screen", "sans-serif"],
         // heading: ["LXGW WenKai GB Screen", "sans-serif"],
-        body: [ "Cascadia Code"],
-        heading: ["Cascadia Code"],
+        body: [ "Cascadia Code","黑体"],
+        heading: ["Cascadia Code","黑体"],
       },
       colors: {
         transparent: "transparent",
